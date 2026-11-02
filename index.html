@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> צוות ספארי | תוצרים והיכרות</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="ניווט ראשי">
+      <!-- לחיצה על הלוגו פותחת את חלונית ההיכרות -->
+      <div class="brand-group">
+        <button class="brand" id="logoButton" type="button" aria-label="היכרות עם הצוות">
+          <span class="logo" aria-hidden="true">        
+            <img class="corps-logo" src="assets/logo.png" alt="סמל חיל המשא״ן" width="34" height="42">
+</span>
+          <span>צוות ספארי  </span>
+        </button>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <img class="corps-logo" src="assets/mashan-logo.png" alt="סמל חיל המשא״ן" width="34" height="42">
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">ראשי</a>
+        <a href="#products">התוצרים שלנו</a>
+        <button type="button" data-open-team>קצת עלינו</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="overline">חיל המשא״ן · בה״ד 11</div>
+          <h1>צוות <span class="accent">ספארי</span></h1>
+          <p>נעים להכיר! אנחנו צוות ספארי, משרתים בשלישות ברמת גן. באתר זה ריכזנו את הלומדות והתוצרים הדיגיטליים שלנו!</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">לצפייה בתוצרים <span aria-hidden="true">←</span></a>
+            <button class="btn btn-secondary" type="button" data-open-team>הכירו אותנו</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="סמל זמני של מפל שלישות">
+          <div class="visual-card">
+            <div class="visual-giraffe" aria-hidden="true">🦒</div>
+          </div>
+          <div class="sticker sticker-a"> מלמן, ז"ל</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="small-label">העבודות שלנו</div>
+            <h2>התוצרים שלנו</h2>
+            <p>לומדות, תרגולים ותוצרים שפיתחנו.</p>
+          </div>
+          <div style="color:var(--muted);font-size:.9rem">החליקו בין הכרטיסים ←</div>
+        </div>
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- תוצר 1: הקישור כבר מוגדר. כדי להוסיף תמונה, החליפו את cover-placeholder בתגית img. -->
+            <article class="project-card">
+              <a href="https://pd02mt.github.io/HouseVisit-fixed/" target="_blank" rel="noopener noreferrer"
+                aria-label="פתיחת לומדת ביקור בית">
+                <div class="project-cover">
+                  <img src="assets/house-visit.png" alt="לומדת ביקור בית">
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>ביקור בית</h3>
+                <p>לומדת תרגול בנושא ביקור בית. <br><span class="elian">מפתחת: אליאן שם טוב </span></p>                <a class="project-link" href="https://pd02mt.github.io/HouseVisit-fixed/" target="_blank"
+                rel="noopener noreferrer">לצפייה בלומדה <span>↗</span></a>
+              </div>
+            </article>
+
+            <!-- העתיקו את הכרטיס הבא לכל תוצר חדש ושנו את התמונה, השם, התיאור והקישור -->
+            <article class="project-card">
+              <div class="project-cover" style="background:#f8eaf0">
+                <div class="cover-placeholder"><span>✳</span><strong>מקום לתמונת תוצר</strong><br><small>החליפו בצילום
+                    מסך</small></div>
+              </div>
+              <div class="project-info">
+                <h3>שם התוצר הבא</h3>
+                <p>תיאור קצר של הלומדה או של מטרת התוצר.</p>
+                <a class="project-link placeholder-link" href="#" onclick="return false">קישור יתווסף בהמשך
+                  <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-cover" style="background:#e4eee7">
+                <div class="cover-placeholder"><span>◇</span><strong>מקום לתמונת תוצר</strong><br><small>החליפו בצילום
+                    מסך</small></div>
+              </div>
+              <div class="project-info">
+                <h3>שם תוצר נוסף</h3>
+                <p>תיאור קצר שיסביר למבקרים מה אפשר למצוא כאן.</p>
+                <a class="project-link placeholder-link" href="#" onclick="return false">קישור יתווסף בהמשך
+                  <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-cover" style="background:#f5e9ee">
+                <div class="cover-placeholder"><span>○</span><strong>מקום לתמונת תוצר</strong><br><small>החליפו בצילום
+                    מסך</small></div>
+              </div>
+              <div class="project-info">
+                <h3>עוד תוצר</h3>
+                <p>הגלריה יכולה לגדול בקלות עם כל פרויקט חדש.</p>
+                <a class="project-link placeholder-link" href="#" onclick="return false">קישור יתווסף בהמשך
+                  <span>↗</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-footer">
+            <button class="arrow" id="prevBtn" aria-label="התוצר הקודם">→</button>
+            <div class="dots" id="carouselDots"></div>
+            <button class="arrow" id="nextBtn" aria-label="התוצר הבא">←</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">צוות ספארי  </span>
+      <span>תיק התוצרים שלנו · חיל המשא״ן</span>
+      <a href="#home" style="text-decoration:none;font-weight:800;color:var(--purple)">חזרה לראש העמוד ↑</a>
+    </div>
+  </footer>
+
+  <!-- חלונית ההיכרות נפתחת בלחיצה על הלוגו או על כפתור "הכירו אותנו" -->
+  <div class="modal-backdrop" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    
+    <div class="modal">
+      <button class="modal-close" id="closeModal" type="button" aria-label="סגירה">×</button>
+      <!-- אזור הלוגו והמשמעות של ספארי -->
+<section class="safari-intro">
+
+    <img src="assets/logo.png"
+         alt="לוגו צוות ספארי"
+         class="safari-main-logo">
+
+    <h2>נעים להכיר, אנחנו ספארי!</h2>
+    <p>חמישה תחומים, צוות אחד, והמון יצירתיות.</p>
+
+    <div class="safari-letters">
+
+        <button class="letter-card green"
+                onclick="showSafariLetter(0)">ס׳</button>
+
+        <button class="letter-card pink"
+                onclick="showSafariLetter(1)">פ׳</button>
+
+        <button class="letter-card green"
+                onclick="showSafariLetter(2)">א׳</button>
+
+        <button class="letter-card pink"
+                onclick="showSafariLetter(3)">ר׳</button>
+
+        <button class="letter-card green"
+                onclick="showSafariLetter(4)">י׳</button>
+
+    </div>
+
+    <div class="letter-description" id="letterDescription">
+        <h3 id="letterTitle">סטילס</h3>
+        <p id="letterText">
+            צילום, תמונות ואלמנטים חזותיים שמוסיפים חיים לתוצרים.
+        </p>
+    </div>
+
+</section>
+      <div class="small-label">הצוות שמאחורי הספארי  </div>
+      <h2 id="modalTitle">קצת עלינו</h2>
+      <p class="modal-intro">אנחנו לירי, טליה ואליאן, גריפקאית ומפתחות לומדה בחיל המשא״ן. אנחנו יושבות בשלישות ברמת גן ויוצרות
+        תוצרי למידה לבה״ד 11, מתוך רצון להפוך את החומר המקצועי לנגיש, ברור ואינטראקטיבי.</p>
+      <div class="people-grid">
+        <article class="person-card">
+          <div class="person-art">
+          <img class="person" src="assets/liri.jpeg">
+          </div>
+          <h3>לירי רוזנבוים</h3>
+          <div class="person-role">מפתחת לומדה</div>
+          <p>מפתחת לומדה שאוהבת ליצור, לעצב ולמצוא דרכים להפוך תוכן מקצועי לחוויית למידה נעימה וברורה.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-art">
+             <img class="person" src="assets/elian.jpeg">
+          </div>
+          <h3>אליאן שם טוב</h3>
+          <div class="person-role">מפתחת לומדה </div>
+          <p>מפתחת לומדה שאוהבת לחשוב על רעיונות, לבנות תוצרים ולשלב בין יצירתיות, טכנולוגיה והדרכה.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-art" style="background:#f8eaf0">
+              <img class="person" src="assets/talya.jpeg">
+          </div>
+          <h3>טליה אושר</h3>
+          <div class="person-role">גרפיקאית</div>
+          <p>אחראית על הצד הגרפי והוויזואלי של התוצרים, עם שיער אדום חלק ועין עיצובית.</p>
+        </article>
+      </div>
+      <!-- <div class="modal-footnote">האיורים זמניים ואפשר   בה</div> -->
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
