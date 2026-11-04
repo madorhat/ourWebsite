@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> צוות ספארי | תוצרים והיכרות</title>
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="ניווט ראשי">
+      <!-- לחיצה על הלוגו פותחת את חלונית ההיכרות -->
+      <div class="brand-group">
+        <button class="brand" id="logoButton" type="button" aria-label="היכרות עם הצוות">
+          <span class="logo" aria-hidden="true">        
+            <img class="corps-logo" src="assets/logo.png" alt="סמל חיל המשא״ן" width="34" height="42">
+</span>
+          <span>צוות ספארי  </span>
+        </button>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <img class="corps-logo" src="assets/mashan-logo.png" alt="סמל חיל המשא״ן" width="34" height="42">
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">ראשי</a>
+        <a href="#products">התוצרים שלנו</a>
+        <a href="#drinks">גלריית משקאות</a>
+        <button type="button" data-open-team>קצת עלינו</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="overline">חיל המשא״ן · בה״ד 11</div>
+          <h1>צוות <span class="accent">ספארי</span></h1>
+          <p>נעים להכיר! אנחנו צוות ספארי, משרתים בשלישות ברמת גן. באתר זה ריכזנו את הלומדות והתוצרים הדיגיטליים שלנו!</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">לצפייה בתוצרים <span aria-hidden="true">←</span></a>
+            <button class="btn btn-secondary" type="button" data-open-team>הכירו אותנו</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="סמל זמני של מפל שלישות">
+          <div class="visual-card">
+            <div class="visual-giraffe" aria-hidden="true">🦒</div>
+          </div>
+          <div class="sticker sticker-a"> מלמן, ז"ל</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="small-label">העבודות שלנו</div>
+            <h2>התוצרים שלנו</h2>
+            <p>לומדות, תרגולים ותוצרים שפיתחנו.</p>
+          </div>
+          <div style="color:var(--muted);font-size:.9rem">החליקו בין הכרטיסים ←</div>
+        </div>
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- תוצר 1: הקישור כבר מוגדר. כדי להוסיף תמונה, החליפו את cover-placeholder בתגית img. -->
+            <article class="project-card">
+              <a href="https://pd02mt.github.io/HouseVisit-fixed/" target="_blank" rel="noopener noreferrer"
+                aria-label="פתיחת לומדת ביקור בית">
+                <div class="project-cover">
+                  <img src="assets/house-visit.png" alt="לומדת ביקור בית">
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>ביקור בית</h3>
+                <p>לומדת תרגול בנושא ביקור בית. <br><span class="elian">מפתחת: אליאן שם טוב </span></p>                <a class="project-link" href="https://pd02mt.github.io/HouseVisit-fixed/" target="_blank"
+                rel="noopener noreferrer">לצפייה בלומדה <span>↗</span></a>
+              </div>
+            </article>
+
+            <!-- העתיקו את הכרטיס הבא לכל תוצר חדש ושנו את התמונה, השם, התיאור והקישור -->
+            <article class="project-card">
+              <div class="project-cover" style="background:#f8eaf0">
+                <div class="cover-placeholder"><span>✳</span><strong>מקום לתמונת תוצר</strong><br><small>החליפו בצילום
+                    מסך</small></div>
+              </div>
+              <div class="project-info">
+                <h3>שם התוצר הבא</h3>
+                <p>תיאור קצר של הלומדה או של מטרת התוצר.</p>
+                <a class="project-link placeholder-link" href="#" onclick="return false">קישור יתווסף בהמשך
+                  <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-cover" style="background:#e4eee7">
+                <div class="cover-placeholder"><span>◇</span><strong>מקום לתמונת תוצר</strong><br><small>החליפו בצילום
+                    מסך</small></div>
+              </div>
+              <div class="project-info">
+                <h3>שם תוצר נוסף</h3>
+                <p>תיאור קצר שיסביר למבקרים מה אפשר למצוא כאן.</p>
+                <a class="project-link placeholder-link" href="#" onclick="return false">קישור יתווסף בהמשך
+                  <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-cover" style="background:#f5e9ee">
+                <div class="cover-placeholder"><span>○</span><strong>מקום לתמונת תוצר</strong><br><small>החליפו בצילום
+                    מסך</small></div>
+              </div>
+              <div class="project-info">
+                <h3>עוד תוצר</h3>
+                <p>הגלריה יכולה לגדול בקלות עם כל פרויקט חדש.</p>
+                <a class="project-link placeholder-link" href="#" onclick="return false">קישור יתווסף בהמשך
+                  <span>↗</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-footer">
+            <button class="arrow" id="prevBtn" aria-label="התוצר הקודם">→</button>
+            <div class="dots" id="carouselDots"></div>
+            <button class="arrow" id="nextBtn" aria-label="התוצר הבא">←</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- גלריית המשקאות: כדי להוסיף משקה, העתיקו drink-card ושנו תמונה, שם, תאריך ודירוג -->
+    <section class="section drinks-section" id="drinks">
+      <div class="section-inner">
+        <div class="section-heading drinks-heading">
+          <div>
+            <div class="small-label">רגעים בכוס</div>
+            <h2>גלריית משקאות</h2>
+          </div>
+          <div class="drinks-note">    ✦✦✦</div>
+        </div>
+
+        <div class="drinks-grid">
+          <article class="drink-card">
+            <div class="drink-photo drink-photo-pink">
+              <!-- החליפו את אזור ה-placeholder בתמונה: <img src="assets/drink-1.jpg" alt="שם המשקה"> -->
+              <div class="drink-placeholder"><span></span><strong><img class="drink" src="assets/drink1.jpeg" alt="שם המשקה">  </strong><small>   </small></div>
+            </div>
+            <div class="drink-info">
+              <div class="drink-title-row"><h3>המאצ'ה הראשונה </h3><span class="drink-number">01</span></div>
+              <p>מאצ'ה עם חלב דל לקטוז ופאום וניל עם מלח ים</p>
+
+              <p class="drink-date"><span>📅</span> תאריך הכנה: <time>26/8/2026</time></p>
+              <div class="drink-rating" aria-label="דירוג 5 מתוך 5"><span class="rating-label">הדירוג שלנו</span><span class="stars">★★★2\1★</span><span class="rating-value">4.5\5</span></div>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <div class="drink-photo drink-photo-green">
+              <div class="drink-placeholder"><span></span><strong><img class="drink" src="assets/drink2.jpeg" alt="שם המשקה">  </strong><small>   </small></div>
+            </div>
+            <div class="drink-info">
+              <div class="drink-title-row"><h3>מאצ'ה קר</h3><span class="drink-number">02</span></div>
+              <p>מאצ'ה עם חלב וניל ופאום וניל עם מלח ים</p>
+              <p class="drink-date"><span>📅</span> תאריך הכנה: <time>31/8/2026</time></p>
+              <div class="drink-rating" aria-label="דירוג 4 מתוך 5"><span class="rating-label">הדירוג שלנו</span><span class="stars">★★★★★<span class="empty-star"></span></span><span class="rating-value">5/5</span></div>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <div class="drink-photo drink-photo-cream">
+              <div class="drink-placeholder"><span></span><strong><img class="drink" src="assets/drink3.jpeg" alt="שם המשקה">  </strong><small>   </small></div>
+            </div>
+            <div class="drink-info">
+              <div class="drink-title-row"><h3>מאצה וקפה עם בובה </h3><span class="drink-number">03</span></div>
+               <p>מאצ'ה\מאסטר קפה לאטה עם פניני טפיוקה רכות</p>
+              <p class="drink-date"><span>📅</span> תאריך הכנה: <time>08/9/2026</time></p>
+              <div class="drink-rating" aria-label="דירוג 3 מתוך 5"><span class="rating-label">הדירוג שלנו</span><span class="stars">★★★★★<span class="empty-star"></span></span><span class="rating-value">5/5</span></div>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <div class="drink-photo drink-photo-cream">
+              <div class="drink-placeholder"><span></span><strong><img class="drink" src="assets/drink4.jpeg" alt="שם המשקה">  </strong><small>   </small></div>
+            </div>
+            <div class="drink-info">
+              <div class="drink-title-row"><h3>מאצה\קפה קר</h3><span class="drink-number">03</span></div>
+             <p>מאצ'ה/קפה מחליטת פולי קפה בברזיל - נס קפה, עם חלב דל לקטוז ופאום וניל עם מלח ים</p>
+              <p class="drink-date"><span>📅</span> תאריך הכנה: <time>29/10/2026</time></p>
+              <div class="drink-rating" aria-label="דירוג 3 מתוך 5"><span class="rating-label">הדירוג שלנו</span><span class="stars">★★★2\1★<span class="empty-star"></span></span><span class="rating-value">4.5/5</span></div>
+            </div>
+          </article>
+
+           <article class="drink-card">
+            <div class="drink-photo drink-photo-cream">
+              <div class="drink-placeholder"><span></span><strong><img class="drink" src="assets/drink5.jpeg" alt="שם המשקה">  </strong><small>   </small></div>
+            </div>
+            <div class="drink-info">
+              <div class="drink-title-row"><h3> קפה קר</h3><span class="drink-number">03</span></div>
+               <p>קפה מחליטת פולי קפה בברזיל - נס קפה, עם חלב וניל     </p>
+              <p class="drink-date"><span>📅</span> תאריך הכנה: <time>1/11/2026</time></p>
+              <div class="drink-rating" aria-label="דירוג 3 מתוך 5"><span class="rating-label">הדירוג שלנו</span><span class="stars">★★★★<span class="empty-star">★</span></span><span class="rating-value">4/5</span></div>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <div class="drink-photo drink-photo-cream">
+              <div class="drink-placeholder"><span></span><strong><img class="drink" src="assets/drink6.jpeg" alt="שם המשקה">  </strong><small>   </small></div>
+            </div>
+            <div class="drink-info">
+              <div class="drink-title-row"><h3>דירטי צ'אי קר</h3><span class="drink-number">03</span></div>
+              <p>סירופ צ'אי ביתי, קפה מחליטת פולי קפה בברזיל - נס קפה וחלב דל לקטוז</p>
+              <p class="drink-date"><span>📅</span> תאריך הכנה: <time>4/11/2026</time></p>
+              <div class="drink-rating" aria-label="דירוג 3 מתוך 5"><span class="rating-label">הדירוג שלנו</span><span class="stars">★★★★★★★★★★<span class="empty-star"></span></span><span class="rating-value">10/5</span></div>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">צוות ספארי  </span>
+      <span>תיק התוצרים שלנו · חיל המשא״ן</span>
+      <a href="#home" style="text-decoration:none;font-weight:800;color:var(--purple)">חזרה לראש העמוד ↑</a>
+    </div>
+  </footer>
+
+  <!-- חלונית ההיכרות נפתחת בלחיצה על הלוגו או על כפתור "הכירו אותנו" -->
+  <div class="modal-backdrop" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    
+    <div class="modal">
+      <button class="modal-close" id="closeModal" type="button" aria-label="סגירה">×</button>
+      <!-- אזור הלוגו והמשמעות של ספארי -->
+<section class="safari-intro">
+
+    <img src="assets/logo.png"
+         alt="לוגו צוות ספארי"
+         class="safari-main-logo">
+
+    <h2>נעים להכיר, אנחנו ספארי!</h2>
+    <p>חמישה תחומים, צוות אחד, והמון יצירתיות.</p>
+
+    <div class="safari-letters">
+
+        <button class="letter-card green"
+                onclick="showSafariLetter(0)">ס׳</button>
+
+        <button class="letter-card pink"
+                onclick="showSafariLetter(1)">פ׳</button>
+
+        <button class="letter-card green"
+                onclick="showSafariLetter(2)">א׳</button>
+
+        <button class="letter-card pink"
+                onclick="showSafariLetter(3)">ר׳</button>
+
+        <button class="letter-card green"
+                onclick="showSafariLetter(4)">י׳</button>
+
+    </div>
+
+    <div class="letter-description" id="letterDescription">
+        <h3 id="letterTitle">סטילס</h3>
+        <p id="letterText">
+            צילום, תמונות ואלמנטים חזותיים שמוסיפים חיים לתוצרים.
+        </p>
+    </div>
+
+</section>
+      <div class="small-label">הצוות שמאחורי הספארי  </div>
+      <h2 id="modalTitle">קצת עלינו</h2>
+      <p class="modal-intro">אנחנו לירי, טליה ואליאן, גריפקאית ומפתחות לומדה בחיל המשא״ן. אנחנו יושבות בשלישות ברמת גן ויוצרות
+        תוצרי למידה לבה״ד 11, מתוך רצון להפוך את החומר המקצועי לנגיש, ברור ואינטראקטיבי.</p>
+      <div class="people-grid">
+        <article class="person-card">
+          <div class="person-art">
+          <img class="person" src="assets/liri.jpeg">
+          </div>
+          <h3>לירי רוזנבוים</h3>
+          <div class="person-role">מפתחת לומדה</div>
+          <p>מפתחת לומדה שאוהבת ליצור, לעצב ולמצוא דרכים להפוך תוכן מקצועי לחוויית למידה נעימה וברורה. </p>
+          <p>אוהבת גם: להפוך מכלום למשהו בעריכת ווידאיו, דינוזאורים, את חולון.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-art">
+             <img class="person" src="assets/elian.jpeg">
+          </div>
+          <h3>אליאן שם טוב</h3>
+          <div class="person-role">מפתחת לומדה </div>
+          <p>מפתחת לומדה שאוהבת לחשוב על רעיונות, לבנות תוצרים ולשלב בין יצירתיות, טכנולוגיה והדרכה.</p>
+          <p>אוהבת גם: לשחות, להגן מפני אויבי המרפסות, ארוחות שישי.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-art" style="background:#f8eaf0">
+              <img class="person" src="assets/talya.jpeg">
+          </div>
+          <h3>טליה אושר</h3>
+          <div class="person-role">גרפיקאית</div>
+          <p>אחראית על הצד הגרפי והוויזואלי של התוצרים, עם שיער אדום חלק ועין עיצובית.</p>
+          <p>אוהבת גם: צמר אלפקות, פליירים ואת אנגליה.</p>
+        </article>
+      </div>
+      <!-- <div class="modal-footnote">האיורים זמניים ואפשר   בה</div> -->
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
